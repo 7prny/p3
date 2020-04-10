@@ -1,0 +1,15 @@
+{
+  "short_name": "DipFunZ",
+  "name": "DipFunZ - Get Updates You Want",
+  "icons": [
+    {
+      "src": "https://rawcdn.githack.com/7prny/p3/31fd52ffa18514256268e1e82d73e64f809688a0/Dip%20fun%20z.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "theme_color": "#67BCFF",
+  "display": "standalone",
+  "start_url": "/?utm_source=homescreen"
+}
