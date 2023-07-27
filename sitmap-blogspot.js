@@ -72,16 +72,14 @@ function loadtoc(json) {
                 }
 
                 // get the post labels from the entry
-                var pll = '';
-                if ("category" in entry) {
-                    for (var k = 0; k < entry.category.length; k++) {
-                        pll += '<a href="javascript:filterPosts(\'' + entry.category[k].term + '\');" title="Click here to select all posts with label \'' + entry.category[k].term + '\'">' + entry.category[k].term + '</a>,  ';
-                    }
-                    var l = pll.lastIndexOf(',');
-                    if (l != -1) {
-                        pll = pll.substring(0, l);
-                    }
-                }
+if ("category" in entry) {
+  for (var k = 0; k < entry.category.length; k++) {
+    pll += entry.category[k].term;
+    if (k < entry.category.length - 1) {
+      pll += ', ';
+    }
+  }
+}
 
                 // add the post data to the arrays
                 postTitle.push(posttitle);
